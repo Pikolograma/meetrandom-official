@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>MeetRandom - Accueil</title>
+<link rel="stylesheet" href="/styles.css" />
+<script src="/firebase.js" defer></script>
+<script src="/main.js" defer></script>
+</head>
+<body class="theme-light">
+  <div id="app" class="container hidden-fade">
+    <header class="header">
+      <h1>MeetRandom</h1>
+      <div class="user-area">
+        <img id="user-photo" class="avatar" src="" alt="" />
+        <span id="user-name"></span>
+        <button id="signout" class="btn">Se déconnecter</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>Personnes en ligne</h2>
+        <div id="online-count" class="big">0</div>
+        <div id="users-list" class="users-list"></div>
+      </section>
+
+      <section class="card">
+        <h2>Discussion (exemple)</h2>
+        <div id="chat" class="chat-box">
+          <div class="muted">Exemple de zone — ajoute ton propre système de chat ici.</div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">© MeetRandom - <span id="year"></span></footer>
+  </div>
+
+  <div id="loading-screen" class="loading">
+    <div class="spinner"></div>
+    <div>Vérification d'authentification…</div>
+  </div>
+</body>
+</html>
